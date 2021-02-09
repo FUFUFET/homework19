@@ -1,0 +1,217 @@
+
+html {
+    font-size:10px;
+    background-color: #AFAFAF;
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+  .container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr ;
+    grid-template-rows:0.1fr 0.8fr 0.1fr ;
+    grid-template-areas: "nav""main" "footer" ;
+}
+
+
+a{text-decoration: none;
+}
+a:link{color: rgb(0, 0, 0);}
+
+a:visited {
+    color: rgb(0, 0, 0);
+  }
+
+
+nav{
+    background-color: #AFAFAF;
+    grid-area: nav;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height: 108.89px;
+     position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:1;
+    background-color: #AFAFAF;
+    }
+
+#logo{margin-right: auto;
+    margin-left:10%;
+    margin-top: 0;}
+
+
+ul{
+
+    color:#000;
+    text-decoration:none;
+    margin-left:auto;
+    margin-right:0;
+    display: flex;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content:flex-end;
+    position: absolute;
+    top:10px;
+    right:5%;
+}
+li {
+    color: #000000;
+    text-align: center;
+    display: flex;
+    font-size: 1.6rem;
+    margin: 12px 80px 0px 0px;
+
+
+}
+
+#linkedin{ margin-left:auto;
+    margin-right:0;
+    margin-top: -5px;
+}
+
+
+.nav-links a:hover {
+    font-size: 1.6rem;
+    color: rgb(0, 255, 191);
+    font-family:Roboto;
+   }
+   main a:hover{
+    color: rgb(0, 255, 191);
+    font-family:Roboto;
+   }
+
+
+
+ a:focus {
+    outline: none;
+    box-shadow: 0 0 0 7 px rgb(0, 255, 191);
+    padding: 12px;
+    background-color: rgb(0, 255, 191);
+    font-size: 2rem;
+    font-weight: bold;
+
+        }
+
+
+
+#active {
+
+    font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 255, 191);
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;
+
+}
+
+main{
+    background-color: #AFAFAF;
+    grid-area: main;
+  
+  
+}
+
+     h1{grid-area: h1;
+    font-size: 3rem;
+
+padding-top: 5%;
+ }
+
+
+
+.container00{
+    display: grid;
+    height: 80vh;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.3fr 1fr ;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "box00 box01 box02" ;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    } 
+ 
+    .box00{grid-area: box00;
+        text-anchor: middle;
+        padding: 0px 0px 30px 0px;}
+   
+    h2{
+       font-size: 2rem; }
+    .skill{
+        font-size: 1.6rem;}
+   
+    
+    
+
+  .box01{grid-area: box01;
+    padding: 0px 10px 30px 0px;}
+  .box02{grid-area: box02;
+    padding: 0px 10px 30px 0px;}
+footer{ align-items: center;
+    text-align: center;
+grid-area: footer;
+background-color: #AFAFAF;
+position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index:1;
+}
+
+
+
+
+.box2{
+    font-size: 3rem;
+    line-height: 0.1em;
+    align-items: center;
+       text-align: center;
+       padding:50px 0px 0px 0px;
+   }
+
+    .email{
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 1200px){
+        .container{
+            display: grid;
+            height: 170vh;
+            grid-template-columns:1fr ;
+            grid-template-rows:0.1fr 1fr 0.1fr ;
+            grid-template-areas: "nav""main" "footer" ;
+        } }
+
+        @media only screen and (max-width: 1200px){
+            h1{grid-area: h1;
+                font-size: 3rem;
+            padding-bottom: 3%; 
+        padding-top: 1%;} }
+        
+        @media only screen and (max-width: 1200px){
+            .container00{
+                display: grid;
+                height: 160vh;
+                grid-template-columns:1fr ;
+                grid-template-rows:0.1fr 0.5fr 0.5fr 0.5fr ;
+                grid-template-areas: 
+                "h1"
+                "box00" "box01" "box02" ;
+                align-content: center;
+                text-align: center;
+                align-items: center;
+                } }
+    
+        @media only screen and (max-width: 1200px){
+        .myskill{width:300px;
+        height:225px;}}
+    
+      
+           
+            
